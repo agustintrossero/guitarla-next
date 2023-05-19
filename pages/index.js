@@ -1,14 +1,12 @@
-
-import Image from 'next/image'
-//import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-
-//const inter = Inter({ subsets: ['latin'] })
-
+import Link from 'next/link';
+import Layout from '@/components/layout';
 export default function Home() {
   return (
     <>
-      <h1>Hola Mundo  en Next</h1>  
+    <Layout>
+      <h1>Hola Mundo en Next</h1>  
+      <Link href="/nosotros">Nosotros</Link>
+    </Layout>
     </>
   )
 }
