@@ -1,5 +1,6 @@
 import Layout from '@/components/layout';
 import Guitarra from '@/components/guitarra';
+import styles from '../styles/grid.module.css'
 
 export default function Tienda({guitarras}){
     //console.log(guitarras);
@@ -8,9 +9,9 @@ export default function Tienda({guitarras}){
             title={"Tienda Virtual"}
             description='Tienda virtual, guitarLA, Tienda de musica, venta de guitarras'
         >
-            <main className='contenedor'>
+            <main className={'contenedor'}>
                 <h1 className='heading'>Nuestra Colección</h1>
-                <div className='contenido'>
+                <div className={styles.grid}>
                    {guitarras.map(guitarra => (
                     <Guitarra
                         key={guitarra.id}
