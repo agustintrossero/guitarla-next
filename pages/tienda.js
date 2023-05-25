@@ -9,7 +9,7 @@ export default function Tienda({guitarras}){
             title={"Tienda Virtual"}
             description='Tienda virtual, guitarLA, Tienda de musica, venta de guitarras'
         >
-            <main className={'contenedor'}>
+            <main className='contenedor'>
                 <h1 className='heading'>Nuestra Colección</h1>
                 <div className={styles.grid}>
                    {guitarras.map(guitarra => (
