@@ -21,6 +21,7 @@
     overflow: hidden;
     font-size: 1.8rem;
 }
+
 .precio {
     color: var(--primary);
     font-size: 4rem;
